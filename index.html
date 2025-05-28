@@ -122,8 +122,13 @@
       justify-content: center;
     }
     .pub-img img {
-      width: 100%;
-      height: auto;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #fff;
+      display: block;
+      margin: 0 auto;
     }
     .pub-info {
       flex: 1 1 200px;
@@ -140,6 +145,10 @@
       }
       .container {
         padding: 0 4px;
+      }
+      .pub-img img {
+        width: 90px;
+        height: 90px;
       }
     }
   </style>
@@ -162,7 +171,7 @@
   <div class="container">
     <div class="profile-flex" style="margin-top: 24px;">
       <div class="profile-info">
-        <h1 style="text-align:center; font-weight:bold;">Shyamgopal Karthik</h1>
+        <h1 style="text-align:center; font-weight:bold; font-size:2.5em;">Shyamgopal Karthik</h1>
         <p>I am a final year PhD candidate at the University of Tübingen. In the past few years, I've broadly worked on problems at the intersection of Vision and Language. In the past year, I've especially enjoyed worked on enhancing diffusion models with human feedback. I'm excited to develop better controllability and alignment of image and video models in the coming years. <br/> <br/>
 
         Before this, I completed my Bachelor's and Master's degree from the <a href="https://www.iiit.ac.in/">International Institute of Information Technology, Hyderabad</a> in 2021 where I worked with on a variety of computer vision problems. <br/> <br/>
