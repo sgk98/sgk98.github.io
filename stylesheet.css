@@ -1,5 +1,3 @@
-
-
 a {
   color: #035397;
   text-decoration: none;
@@ -169,4 +167,39 @@ b,
   text-align: left;
   -moz-text-align-last: left;
   text-align-last: left;
+}
+
+@media (max-width: 800px) {
+  body, td, th, tr, p, a {
+    font-size: 16px;
+  }
+  table, td, th {
+    width: 100% !important;
+    box-sizing: border-box;
+    display: block;
+  }
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .name {
+    font-size: 24px;
+  }
+  h1, h2 {
+    font-size: 18px;
+  }
+  .papertitle {
+    font-size: 14px;
+  }
+  ul, ol {
+    padding-left: 1.2em;
+  }
+  [align="center"] {
+    text-align: center !important;
+  }
+  td[width], th[width] {
+    width: 100% !important;
+  }
 }
