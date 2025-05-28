@@ -162,9 +162,7 @@
   <div class="container">
     <div class="profile-flex" style="margin-top: 24px;">
       <div class="profile-info">
-        <p align="center">
-          <name>Shyamgopal Karthik</name>
-        </p>
+        <h1 style="text-align:center;">Shyamgopal Karthik</h1>
         <p>I am a final year PhD candidate at the University of Tübingen. In the past few years, I've broadly worked on problems at the intersection of Vision and Language. In the past year, I've especially enjoyed worked on enhancing diffusion models with human feedback. I'm excited to develop better controllability and alignment of image and video models in the coming years. <br/> <br/>
 
         Before this, I completed my Bachelor's and Master's degree from the <a href="https://www.iiit.ac.in/">International Institute of Information Technology, Hyderabad</a> in 2021 where I worked with on a variety of computer vision problems. <br/> <br/>
@@ -196,7 +194,7 @@
         </div>
       </div>
       <section class="news">
-        <heading>News</heading>
+        <h2>News</h2>
         <p>
           <ul>
             <li>27 September 2024. <a href="https://arxiv.org/abs/2406.04312">ReNO</a> was accepted to NeurIPS 2024!</li>
@@ -213,171 +211,145 @@
       </section>
 
       <section class="pub-section">
-        <heading>Selected Publications</heading>
+        <h2>Selected Publications</h2>
       </section>
 
       <div class="pub-list">
         <div class="pub-entry highlight">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/rankdpo.png'>
+            <img src='imgs/rankdpo.png' alt='RankDPO publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>Scalable Ranked Preference Optimization for Text-to-Image Generation 
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik</strong>, <a href="https://scholar.google.com/citations?user=nwjxmycAAAAJ&hl=en">Huseyin Coskun</a>, <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a>, <a href="https://stulyakov.com/">Sergey Tulyakov</a>, <a href="https://alanspike.github.io/">Jian Ren</a>, and <a href="https://scholar.google.com/citations?user=bZdVsMkAAAAJ">Anil Kag</a><br>
-              <em>Arxiv 2024</em> <br><a href="https://arxiv.org/abs/2410.18013"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://snap-research.github.io/RankDPO/"><i class="fa-solid fa-globe"></i>&nbsp;webpage</a>&nbsp;|&nbsp;<a href="newbibs/rankdpo.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>While ReNO did an amazing job at improving the quality of text-to-image models, this came with an increased runtime. As a result, we were looking at DPO based techniques to improve the quality of text-to-image models. Turns out, the biggest bottleneck with applying DPO on these models is that public datasets for these tasks aren't of great quality. To address this issue, we generated and labelled a <strong>new preference dataset</strong> using newer text-to-image models and off-the-shelf reward models. This also allowed us to collect preference rankings and develop a nice <strong>ranking based objective</strong> to improve upon the standard DPO objective. 
-              </p>
+            <h3>Scalable Ranked Preference Optimization for Text-to-Image Generation</h3>
+            <br>
+            <strong>Shyamgopal Karthik</strong>, <a href="https://scholar.google.com/citations?user=nwjxmycAAAAJ&hl=en">Huseyin Coskun</a>, <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a>, <a href="https://stulyakov.com/">Sergey Tulyakov</a>, <a href="https://alanspike.github.io/">Jian Ren</a>, and <a href="https://scholar.google.com/citations?user=bZdVsMkAAAAJ">Anil Kag</a><br>
+            <em>Arxiv 2024</em> <br><a href="https://arxiv.org/abs/2410.18013"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://snap-research.github.io/RankDPO/"><i class="fa-solid fa-globe"></i>&nbsp;webpage</a>&nbsp;|&nbsp;<a href="newbibs/rankdpo.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>While ReNO did an amazing job at improving the quality of text-to-image models, this came with an increased runtime. As a result, we were looking at DPO based techniques to improve the quality of text-to-image models. Turns out, the biggest bottleneck with applying DPO on these models is that public datasets for these tasks aren't of great quality. To address this issue, we generated and labelled a <strong>new preference dataset</strong> using newer text-to-image models and off-the-shelf reward models. This also allowed us to collect preference rankings and develop a nice <strong>ranking based objective</strong> to improve upon the standard DPO objective. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry highlight">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/reno.png'>
+            <img src='imgs/reno.png' alt='ReNO publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>ReNO: Enhancing One-step Text-to-Image Models through Reward-based Noise Optimization 
-</papertitle>
-              <br>
-              <a href="https://lucaeyring.com/">Luca Eyring*</a>, <strong>Shyamgopal Karthik*</strong>, <a href="https://karroth.com/">Karsten Roth</a>, <a href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>NeurIPS 2024</em>, Vancouver, Canada.<br><a href="https://arxiv.org/abs/2406.04312"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/ReNO"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="https://huggingface.co/spaces/fffiloni/ReNO"><i class="fa-solid fa-play-circle"></i>&nbsp;demo</a>&nbsp;|&nbsp;<a href="newbibs/reno.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>We knew that best-of-n sampling with a reward model was already an extremely strong baseline. However, could we go one-step further and <strong>optimize the initial noise</strong> to improve this further? This problem stumped us for a long while since backprop through the whole diffusion process was expensive and had exploding gradients. We finally found the solution with <strong>one-step models</strong>! However, would the one-step models be good enough to work with? Turns out that optimziing the noise of one-step text-to-image models could give us results that were competitive with proprietary closed source models that were 10x larger! This also culminated a frutiful 1.5 year journey for me of trying my best to find interesting research directions without updating a <strong>single</strong> parameter of any model.
-              </p>
+            <h3>ReNO: Enhancing One-step Text-to-Image Models through Reward-based Noise Optimization</h3>
+            <br>
+            <a href="https://lucaeyring.com/">Luca Eyring*</a>, <strong>Shyamgopal Karthik*</strong>, <a href="https://karroth.com/">Karsten Roth</a>, <a href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
+            <em>NeurIPS 2024</em>, Vancouver, Canada.<br><a href="https://arxiv.org/abs/2406.04312"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/ReNO"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="https://huggingface.co/spaces/fffiloni/ReNO"><i class="fa-solid fa-play-circle"></i>&nbsp;demo</a>&nbsp;|&nbsp;<a href="newbibs/reno.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>We knew that best-of-n sampling with a reward model was already an extremely strong baseline. However, could we go one-step further and <strong>optimize the initial noise</strong> to improve this further? This problem stumped us for a long while since backprop through the whole diffusion process was expensive and had exploding gradients. We finally found the solution with <strong>one-step models</strong>! However, would the one-step models be good enough to work with? Turns out that optimziing the noise of one-step text-to-image models could give us results that were competitive with proprietary closed source models that were 10x larger! This also culminated a frutiful 1.5 year journey for me of trying my best to find interesting research directions without updating a <strong>single</strong> parameter of any model.
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/imageselect.png'>
+            <img src='imgs/imageselect.png' alt='ImageSelect publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>If at First You Don't Succeed, Try, Try Again: Faithful Diffusion-based Text-to-Image Generation by Selection 
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik*</strong>, <a href="https://karroth.com/">Karsten Roth*</a>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>ICCV Workshop on Multimodal Foundation Models 2023</em>, Paris, France.<br><a href="https://arxiv.org/abs/2305.13308"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/ImageSelect"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/imageselect.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>This paper started my journey into text-to-image generation. The main challenge we had was that Stable Diffusion models were doing a decent job at generating high-quality images, but there were tons of issues in closely following the prompt. While there were several methods proposed especially focusing on the attention maps during inference, we realized than best-of-n sampling with a human-preference reward model went a long way in improving the results. While this was quite trivial in some ways, it set the stage for us to continue exploring the effectiveness of reward models and the effect of the seed in image generation. 
-              </p>
+            <h3>If at First You Don't Succeed, Try, Try Again: Faithful Diffusion-based Text-to-Image Generation by Selection</h3>
+            <br>
+            <strong>Shyamgopal Karthik*</strong>, <a href="https://karroth.com/">Karsten Roth*</a>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
+            <em>ICCV Workshop on Multimodal Foundation Models 2023</em>, Paris, France.<br><a href="https://arxiv.org/abs/2305.13308"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/ImageSelect"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/imageselect.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>This paper started my journey into text-to-image generation. The main challenge we had was that Stable Diffusion models were doing a decent job at generating high-quality images, but there were tons of issues in closely following the prompt. While there were several methods proposed especially focusing on the attention maps during inference, we realized than best-of-n sampling with a human-preference reward model went a long way in improving the results. While this was quite trivial in some ways, it set the stage for us to continue exploring the effectiveness of reward models and the effect of the seed in image generation. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/egocvr.png'>
+            <img src='imgs/egocvr.png' alt='EgoCVR publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>EgoCVR: An Egocentric Benchmark for Fine-Grained Composed Video Retrieval 
-</papertitle>
-              <br>
-              <a href="https://hummelth.github.io/">Thomas Hummel*</a>, <strong>Shyamgopal Karthik*</strong>, <a href="https://lilygeorgescu.github.io/">Mariana-Iuliana Georgescu</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>ECCV 2024</em>, Milan, Italy.<br><a href="https://arxiv.org/abs/2407.16658"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/EgoCVR"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/egocvr.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>Building on our previous work, we were keen on exploring Composed Video Retrieval. The biggest issue was that the existing benchmark (WebVid-CoVR) was focused excessively on images and did not really require the whole video to solve the task. To address this issue, we spent a lot of time manually curating a nice evaluation set from Ego4D which eventually turned out into a very nice benchmark. CIReVL adapted for videos also turned out to be a very nice training-free method that was competitive with mehtods training on millions of videos!
-              </p>
+            <h3>EgoCVR: An Egocentric Benchmark for Fine-Grained Composed Video Retrieval</h3>
+            <br>
+            <a href="https://hummelth.github.io/">Thomas Hummel*</a>, <strong>Shyamgopal Karthik*</strong>, <a href="https://lilygeorgescu.github.io/">Mariana-Iuliana Georgescu</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
+            <em>ECCV 2024</em>, Milan, Italy.<br><a href="https://arxiv.org/abs/2407.16658"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/EgoCVR"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/egocvr.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>Building on our previous work, we were keen on exploring Composed Video Retrieval. The biggest issue was that the existing benchmark (WebVid-CoVR) was focused excessively on images and did not really require the whole video to solve the task. To address this issue, we spent a lot of time manually curating a nice evaluation set from Ego4D which eventually turned out into a very nice benchmark. CIReVL adapted for videos also turned out to be a very nice training-free method that was competitive with mehtods training on millions of videos!
             </p>
           </div>
         </div>
 
         <div class="pub-entry highlight">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/CIReVL-Full.png'>
+            <img src='imgs/CIReVL-Full.png' alt='Vision-by-Language publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>Vision-by-Language for Training-Free Compositional Image Retrieval 
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik*</strong>,<a href="https://karroth.com/"> Karsten Roth*</a>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>ICLR 2024</em>, Vienna, Austria.<br><a href="https://arxiv.org/abs/2310.09291"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/Vision_by_Language"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/cirevl.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>We started off looking at Composed Image Retrieval task where we have a query image and textual instruction that modified the query. Popular methods for this task  were trained similar to textual inversion methods and predicted a "pseudo-token" for the query image. Our immediate instinct was that using an off-the-shelf captioning model <strong> must </strong> provide a stronger and more interpretable signal than these trained pseudo-token methods. Therefore, our "vision-by-language" method was just to caption an image, reformulate the caption based on the textual instruction and retrieve images based on the reformulated caption. Not only was this method more interpretable and training-free, it also allowed us to <strong>double</strong> the state-of-the-art performance on some popular benchmarks. 
-              </p>
+            <h3>Vision-by-Language for Training-Free Compositional Image Retrieval</h3>
+            <br>
+            <strong>Shyamgopal Karthik*</strong>,<a href="https://karroth.com/"> Karsten Roth*</a>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
+            <em>ICLR 2024</em>, Vienna, Austria.<br><a href="https://arxiv.org/abs/2310.09291"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/Vision_by_Language"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/cirevl.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>We started off looking at Composed Image Retrieval task where we have a query image and textual instruction that modified the query. Popular methods for this task  were trained similar to textual inversion methods and predicted a "pseudo-token" for the query image. Our immediate instinct was that using an off-the-shelf captioning model <strong> must </strong> provide a stronger and more interpretable signal than these trained pseudo-token methods. Therefore, our "vision-by-language" method was just to caption an image, reformulate the caption based on the textual instruction and retrieve images based on the reformulated caption. Not only was this method more interpretable and training-free, it also allowed us to <strong>double</strong> the state-of-the-art performance on some popular benchmarks. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
           <div class="pub-img">
-            <img hegiht="100%" width="auto" src='imgs/kgsp.png'>
+            <img src='imgs/kgsp.png' alt='KG-SP publication image' height="100%" width="auto">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>KG-SP: Knowledge Guided Simple Primitives for Open World Compositional Zero-Shot Learning 
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik</strong>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>CVPR 2022</em>, New Orleans, USA.<br><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Karthik_KG-SP_Knowledge_Guided_Simple_Primitives_for_Open_World_Compositional_Zero-Shot_CVPR_2022_paper.pdf"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/KG-SP"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/kgsp.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>In this work, we looked at the problem of Compositional Zero-Shot Learning, where the goal is to predict (attribute, object) labels for an image, and generalize to unseen (attribute, object) pairs. Recent methods had tried to model attributes and objects jointly using a variety of ideas. Here, we show that predicting attributes and objects independently can work quite well for this task. Additionally, we show how a knowledge-base can be incorporated to improve the performance of the model at inference. Finally, we introduce a new partially labeled setting where we show how we can train our model in the absence of compositional labels. 
-              </p>
+            <h3>KG-SP: Knowledge Guided Simple Primitives for Open World Compositional Zero-Shot Learning</h3>
+            <br>
+            <strong>Shyamgopal Karthik</strong>, <a href="https://mancinimassimiliano.github.io/">Massimiliano Mancini</a>, and <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
+            <em>CVPR 2022</em>, New Orleans, USA.<br><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Karthik_KG-SP_Knowledge_Guided_Simple_Primitives_for_Open_World_Compositional_Zero-Shot_CVPR_2022_paper.pdf"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/ExplainableML/KG-SP"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/kgsp.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>In this work, we looked at the problem of Compositional Zero-Shot Learning, where the goal is to predict (attribute, object) labels for an image, and generalize to unseen (attribute, object) pairs. Recent methods had tried to model attributes and objects jointly using a variety of ideas. Here, we show that predicting attributes and objects independently can work quite well for this task. Additionally, we show how a knowledge-base can be incorporated to improve the performance of the model at inference. Finally, we introduce a new partially labeled setting where we show how we can train our model in the absence of compositional labels. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
           <div class="pub-img">
-            <img width="auto" height="100%" src='imgs/ssl_big.png'>
+            <img src='imgs/ssl_big.png' alt='SSL publication image' width="auto" height="100%">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>Learning from Long-Tailed Data with Noisy Labels
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik</strong>, <a href="https://europe.naverlabs.com/people_user/Jerome-Revaud/">Jerome Revaud</a>, and <a href="https://europe.naverlabs.com/people_user/Boris-Chidlovskii/">Boris Chidlovskii</a><br>
-              <em>ICCV 2021 Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving</em>, Virtual.<br><a href="https://arxiv.org/abs/2108.11096"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="newbibs/ssl_noise.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-              <p>This paper started off as a fun journey towards developing methods that are robust to both label noise and long-tailed class distributions. Methods tailored for one of these challenges collapsed when the other challenge was introduced. In the end, it turned out that vanilla self-supervised training went a long way in learning representations that were robust to both label noise and long-tailed distributions. 
-              </p>
+            <h3>Learning from Long-Tailed Data with Noisy Labels</h3>
+            <br>
+            <strong>Shyamgopal Karthik</strong>, <a href="https://europe.naverlabs.com/people_user/Jerome-Revaud/">Jerome Revaud</a>, and <a href="https://europe.naverlabs.com/people_user/Boris-Chidlovskii/">Boris Chidlovskii</a><br>
+            <em>ICCV 2021 Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving</em>, Virtual.<br><a href="https://arxiv.org/abs/2108.11096"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="newbibs/ssl_noise.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+            <p>This paper started off as a fun journey towards developing methods that are robust to both label noise and long-tailed class distributions. Methods tailored for one of these challenges collapsed when the other challenge was introduced. In the end, it turned out that vanilla self-supervised training went a long way in learning representations that were robust to both label noise and long-tailed distributions. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
          <div class="pub-img">
-            <img width="200" src='imgs/iclr.jpg'>
+            <img src='imgs/iclr.jpg' alt='ICLR publication image' width="200">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>No Cost Likelihood Manipulation at Test Time for Making Better Mistakes in Deep Networks
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik</strong>, <a href="https://drimpossible.github.io/">Ameya Prabhu</a>, <a href="https://puneetkdokania.github.io/">Puneet Dokania</a>, and <a href="https://faculty.iiit.ac.in/~vgandhi/">Vineet Gandhi</a><br>
-              <em> ICLR 2021</em>, Virtual.<br><a href="https://arxiv.org/abs/2104.00795"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/sgk98/CRM-Better-Mistakes"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/iclr.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-               <p>The main motivation behind this work was to see if we could reduce the severity of mistakes in a classification setting. To do this, we make use of label hierarchies which are readily available through taxonomies like WordNet. For our method, we show that a simple algorithm from Duda and Hart's Pattern Recognition textbook way back in 1973 can be effectively used in a post-hoc manner while retaining the calibration of the base model. 
-              </p>
+            <h3>No Cost Likelihood Manipulation at Test Time for Making Better Mistakes in Deep Networks</h3>
+            <br>
+            <strong>Shyamgopal Karthik</strong>, <a href="https://drimpossible.github.io/">Ameya Prabhu</a>, <a href="https://puneetkdokania.github.io/">Puneet Dokania</a>, and <a href="https://faculty.iiit.ac.in/~vgandhi/">Vineet Gandhi</a><br>
+            <em> ICLR 2021</em>, Virtual.<br><a href="https://arxiv.org/abs/2104.00795"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="https://github.com/sgk98/CRM-Better-Mistakes"><i class="fa-brands fa-github"></i>&nbsp;code</a>&nbsp;|&nbsp;<a href="newbibs/iclr.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+             <p>The main motivation behind this work was to see if we could reduce the severity of mistakes in a classification setting. To do this, we make use of label hierarchies which are readily available through taxonomies like WordNet. For our method, we show that a simple algorithm from Duda and Hart's Pattern Recognition textbook way back in 1973 can be effectively used in a post-hoc manner while retaining the calibration of the base model. 
             </p>
           </div>
         </div>
 
         <div class="pub-entry">
           <div class="pub-img">
-            <img width="200" src='imgs/tracking.jpg'>
+            <img src='imgs/tracking.jpg' alt='Tracking publication image' width="200">
           </div>
           <div class="pub-info">
-            <p>
-                <papertitle>Simple Unsupervised Multi-Object Tracking
-</papertitle>
-              <br>
-              <strong>Shyamgopal Karthik</strong>, <a href="https://drimpossible.github.io">Ameya Prabhu</a>, and <a href="https://faculty.iiit.ac.in/~vgandhi">Vineet Gandhi</a> <br>
-             <em> Arxiv 2020</em>. <br><a href="https://arxiv.org/abs/2006.02609"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="newbibs/mot.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
-             <p>We revisited Re-Idenification models that were widely used in Multi-Object Tracking algorithms. In various trackers, this is often the only component that requires video level supervision. Our insight was that we could train a ReID model using pseudo-labels generated from a Kalman filter based tracker in a self-supervised fashion. The resulting ReID model can be used as a drop-in replacement to the supervised ReID models used in trackers. Alternatively, using these ReID features as a post-processing step in trackers that don't use a ReID model can reduce the number of ID Switches by 67%. In hindsight, I hope this was useful in motivating some <a href="https://arxiv.org/abs/2206.04656">works</a> later on which strengthened the traditional tracking-by-detection paradigm. 
-             </p>
-           </div>
+            <h3>Simple Unsupervised Multi-Object Tracking</h3>
+            <br>
+            <strong>Shyamgopal Karthik</strong>, <a href="https://drimpossible.github.io">Ameya Prabhu</a>, and <a href="https://faculty.iiit.ac.in/~vgandhi">Vineet Gandhi</a> <br>
+           <em> Arxiv 2020</em>. <br><a href="https://arxiv.org/abs/2006.02609"><i class="fa-solid fa-file-lines"></i>&nbsp;paper</a>&nbsp;|&nbsp;<a href="newbibs/mot.bib"><i class="fa-solid fa-book"></i>&nbsp;bibtex</a>
+           <p>We revisited Re-Idenification models that were widely used in Multi-Object Tracking algorithms. In various trackers, this is often the only component that requires video level supervision. Our insight was that we could train a ReID model using pseudo-labels generated from a Kalman filter based tracker in a self-supervised fashion. The resulting ReID model can be used as a drop-in replacement to the supervised ReID models used in trackers. Alternatively, using these ReID features as a post-processing step in trackers that don't use a ReID model can reduce the number of ID Switches by 67%. In hindsight, I hope this was useful in motivating some <a href="https://arxiv.org/abs/2206.04656">works</a> later on which strengthened the traditional tracking-by-detection paradigm. 
+           </p>
          </div>
-        </div>
-      </div>
-      <div style="margin-top: 40px;">
-        <p align="right">
-          <font size="2">
-            Website style cloned from <a href="https://jonbarron.info/"><strong>this</strong></a> wonderful website.<br> Last update: May 2025
-          </font>
-        </p>
+       </div>
       </div>
     </div>
+    <div style="margin-top: 40px;">
+      <p align="right">
+        <font size="2">
+          Website style cloned from <a href="https://jonbarron.info/"><strong>this</strong></a> wonderful website.<br> Last update: May 2025
+        </font>
+      </p>
+    </div>
+  </div>
   </div>
   </body>
 </html>

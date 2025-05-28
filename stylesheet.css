@@ -1,12 +1,19 @@
 a {
   color: #035397;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 a:focus,
 a:hover {
   color: #5089C6;
   text-decoration: none;
+  outline: none;
+}
+
+a:focus {
+  outline: 2px solid #1772d0;
+  outline-offset: 2px;
 }
 
 body,
@@ -17,6 +24,7 @@ p,
 a {
   font-family: 'Mulish', 'Lato', "Helvetica Neue", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+  line-height: 1.6;
 }
 
 body {
@@ -202,4 +210,12 @@ b,
   td[width], th[width] {
     width: 100% !important;
   }
+}
+
+.pub-entry {
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.pub-entry:hover, .pub-entry:focus-within {
+  box-shadow: 0 4px 16px rgba(23, 114, 208, 0.08), 0 1.5px 6px rgba(80, 137, 198, 0.08);
+  transform: translateY(-2px) scale(1.01);
 }
