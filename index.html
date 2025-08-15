@@ -402,11 +402,12 @@
           <div class="pub-info">
             <h3>Noise Hypernetworks: Amortizing Test-Time Compute in Diffusion Models</h3>
             <div class="pub-meta">
-              <a href="https://lucaeyring.com/">Luca Eyring </a>, <strong>Shyamgopal Karthik</strong>, <a href="https://scholar.google.com/citations?user=nwjxmycAAAAJ&hl=en">Alexey Dosovitskiy</a>,<a href="https://natanielruiz.github.io/">Nataniel Ruiz*</a>, <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata*</a><br>
+              <a href="https://lucaeyring.com/">Luca Eyring </a>, <strong>Shyamgopal Karthik</strong>, <a href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>,<a href="https://natanielruiz.github.io/">Nataniel Ruiz*</a>, <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata*</a><br>
               <em>Arxiv 2025</em>.
             </div>
             <a href="https://arxiv.org/abs/2508.06000"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/NoiseHypernetworks"><i class="fa-brands fa-github"></i>code</a>
+            <a href="https://noisehypernetworks.github.io/"><i class="fa-solid fa-globe"></i>Project Page</a>
             <p>Test-time scaling had become ubiquitous in text-to-image models (among other things due to our work :P). However, we found a neat way to explicitly post-train for the test-time noise optimization objective by training a "hypernetwork" that is optimized to predict the optimal initial noise. This gave neat improvements even on large models like FLUX, but also gives a neat formulation for reward optimization with distilled models. 
             </p>
           </div>
@@ -423,7 +424,7 @@
               <em>ICCV 2025</em>, Hawaii, USA.
             </div>
             <a href="https://arxiv.org/abs/2410.18013"><i class="fa-solid fa-file-lines"></i>paper</a>
-            <a href="https://snap-research.github.io/RankDPO/"><i class="fa-solid fa-globe"></i>webpage</a>
+            <a href="https://snap-research.github.io/RankDPO/"><i class="fa-solid fa-globe"></i>Project Page</a>
             <a href="newbibs/rankdpo.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>While ReNO did an amazing job at improving the quality of text-to-image models, this came with an increased runtime. As a result, we were looking at DPO based techniques to improve the quality of text-to-image models. Turns out, the biggest bottleneck with applying DPO on these models is that public datasets for these tasks aren't of great quality. To address this issue, we generated and labelled a <strong>new preference dataset</strong> using newer text-to-image models and off-the-shelf reward models. This also allowed us to collect preference rankings and develop a nice <strong>ranking based objective</strong> to improve upon the standard DPO objective. 
             </p>
