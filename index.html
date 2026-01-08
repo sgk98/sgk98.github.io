@@ -314,6 +314,20 @@
       margin-left: 0.5em;
     }
 
+    /* Links inside publication descriptions - reset inherited button styles */
+    .pub-info p a {
+      display: inline;
+      color: var(--link-color);
+      font-weight: inherit;
+      font-size: inherit;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+    .pub-info p a:hover {
+      color: var(--link-hover);
+    }
+
     @media (max-width: 800px) {
       .profile-flex {
         flex-direction: column;
@@ -605,15 +619,13 @@
               <em>EVAL-FOMO Workshop at CVPR 2025</em>, Nashville, USA.
             </div>
             <a href="https://arxiv.org/abs/2506.08227"><i class="fa-solid fa-file-lines"></i>paper</a>
-            <p> Along with <a href="https://vishaal27.github.io/">Vishaal</a> and <a
+            <p>Along with <a href="https://vishaal27.github.io/">Vishaal</a> and <a
                 href="https://mehdidc.github.io/">Mehdi</a>, we had noticed that VLM benchmarks had a ton of issues,
-              especially the
-              ones focusing on fine-grained, compositional tasks.
-              This paper was an opportunity for us to show the bitter lesson of vision-language benchmarks, where blind
-              baselines and heuristics outperform VLMs in several cases, and fixing these benchmarks isn't too
-              straightforward either. A few months after putting this paper out, we found out similar issues with the
-              benchmarks in <a href="https://arxiv.org/abs/2511.04670">Cambrian-S</a> too.
-            </p>
+              especially the ones focusing on fine-grained, compositional tasks. This paper was an opportunity for us to
+              show the bitter lesson of vision-language benchmarks, where blind baselines and heuristics outperform VLMs
+              in several cases, and fixing these benchmarks isn't too straightforward either. A few months after putting
+              this paper out, we found out similar <a href="https://arxiv.org/abs/2511.16655">issues</a> with the
+              benchmarks in <a href="https://arxiv.org/abs/2511.04670">Cambrian-S</a> too.</p>
           </div>
         </div>
 
