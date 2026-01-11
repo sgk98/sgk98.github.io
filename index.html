@@ -6,162 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shyamgopal Karthik</title>
   <link rel="shortcut icon" href="imgs/favicon/old_favicon.ico" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet'
-    type='text/css'>
-  <link href='https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap' rel='stylesheet'
-    type='text/css'>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&display=swap"
-    rel="stylesheet" />
+  <!-- Using agarwl's CSS files -->
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="css/fira_font.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
 
   <style type="text/css">
-    /* CSS Variables for theming */
-    :root {
-      --bg-color: #ffffff;
-      --text-color: #2c2c2c;
-      --text-secondary: #333;
-      --text-tertiary: #444;
-      --text-light: #666;
-      --link-color: #1772d0;
-      --link-hover: #f09228;
-      --card-bg: #ffffff;
-      --card-shadow: rgba(0, 0, 0, 0.1);
-      --card-shadow-hover: rgba(0, 0, 0, 0.15);
-      --highlight-bg: #fff9e6;
-      --highlight-shadow: rgba(255, 193, 7, 0.25);
-      --border-color: #e0e0e0;
-    }
-
-    [data-theme="dark"] {
-      --bg-color: #1a1a1a;
-      --text-color: #e0e0e0;
-      --text-secondary: #d0d0d0;
-      --text-tertiary: #c0c0c0;
-      --text-light: #a0a0a0;
-      --link-color: #4dabf7;
-      --link-hover: #ffa726;
-      --card-bg: #2d2d2d;
-      --card-shadow: rgba(0, 0, 0, 0.3);
-      --card-shadow-hover: rgba(0, 0, 0, 0.4);
-      --highlight-bg: #3a3420;
-      --highlight-shadow: rgba(255, 204, 51, 0.35);
-      --border-color: #404040;
-    }
-
-    /* Theme toggle button */
-    .theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: var(--card-bg);
-      border: 2px solid var(--border-color);
-      border-radius: 50px;
-      padding: 8px 16px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Mulish', 'Lato', "Helvetica Neue", Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 14px;
-      color: var(--text-color);
-      transition: all 0.3s ease;
-      z-index: 1000;
-      box-shadow: 0 2px 10px var(--card-shadow);
-    }
-
-    .theme-toggle:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 20px var(--card-shadow-hover);
-    }
-
-    .theme-toggle i {
-      font-size: 16px;
-      transition: transform 0.3s ease;
-    }
-
-    .theme-toggle:hover i {
-      transform: rotate(180deg);
-    }
-
-    /* Apply theme variables to elements */
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    /* Clean, modern academic website styling */
-    body,
-    p,
-    a {
-      font-family: 'Mulish', 'Lato', "Helvetica Neue", Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 15px;
-      color: var(--text-color);
-      line-height: 1.4;
-    }
-
-    a {
-      color: var(--link-color);
-      text-decoration: none;
-    }
-
-    a:focus,
-    a:hover {
-      color: var(--link-hover);
-    }
-
+    /* Site title - matching agarwl's styling */
     h1,
-    h2,
-    h3 {
-      font-family: 'Mulish', 'Lato', "Helvetica Neue", Verdana, Geneva, Tahoma, sans-serif;
-      color: var(--text-secondary);
+    .site-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 32px;
+      letter-spacing: -1px;
+      text-align: center;
+      padding-top: 1em;
+      margin-bottom: 0.5em;
     }
 
+    @media screen and (min-width: 550px) {
+
+      h1,
+      .site-title {
+        font-size: 46px;
+      }
+    }
+
+    /* Container - slightly wider */
     .container {
-      max-width: 800px;
+      max-width: 880px;
       margin: 0 auto;
       padding: 0 10px;
     }
 
+    /* Profile layout - picture left, bio right */
     .profile-flex {
       display: flex;
       flex-direction: row;
-      gap: 32px;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-top: 24px;
-    }
-
-    .profile-info {
-      flex: 2 1 300px;
-      min-width: 250px;
+      gap: 30px;
+      align-items: flex-start;
+      margin-top: 1em;
     }
 
     .profile-img {
-      flex: 1 1 160px;
-      min-width: 120px;
+      flex: 0 0 200px;
       max-width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .profile-img img {
       width: 100%;
-      border-radius: 50%;
+      max-width: 200px;
+      border-radius: 8px;
     }
 
+    .profile-info {
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .profile-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-img {
+        flex: 0 0 auto;
+        max-width: 180px;
+      }
+    }
+
+    /* Social links */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: center;
+      margin-bottom: 1em;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .social-links a i {
+      margin-right: 0.4em;
+      font-size: 1.5em;
+    }
+
+    /* News section - simple bullets */
     .news {
-      padding: 20px 0;
+      padding: 15px 0;
+      margin-bottom: 10px;
     }
 
-    .pub-section {
-      margin-top: 32px;
+    .news ul {
+      margin-left: 20px;
+      padding-left: 0;
     }
 
+    .news li {
+      margin-bottom: 0;
+    }
+
+    /* Publication entry layout - original narrower layout */
     .pub-entry {
       display: flex;
       flex-direction: row;
@@ -171,31 +119,22 @@
       padding: 20px;
       border-radius: 8px;
       flex-wrap: wrap;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      background: var(--card-bg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .pub-entry:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 25px var(--card-shadow-hover);
-    }
-
-    .pub-entry.highlight {
-      background: var(--highlight-bg);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     }
 
     .pub-entry.highlight:hover {
-      box-shadow: 0 8px 25px var(--highlight-shadow);
+      box-shadow: 0 8px 25px rgba(255, 193, 7, 0.25);
     }
 
     .pub-img {
       flex: 0 0 290px;
       max-width: 290px;
       min-width: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .pub-img img {
@@ -203,10 +142,8 @@
       height: 260px;
       object-fit: contain;
       border-radius: 8px;
-      background: var(--card-bg);
       display: block;
       margin: 0 auto;
-      box-shadow: 0 2px 8px var(--card-shadow);
       transition: transform 0.3s ease;
     }
 
@@ -219,202 +156,157 @@
       min-width: 180px;
     }
 
+    /* Paper title */
     .pub-info h3 {
-      margin-bottom: 0.1em;
-      color: var(--text-secondary);
-    }
-
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      justify-content: center;
-      margin-bottom: 1em;
-    }
-
-    .social-links a {
-      display: flex;
-      align-items: center;
-      font-size: 1.1em;
-      color: var(--link-color);
-      text-decoration: none;
-      transition: color 0.2s, transform 0.2s;
-      font-weight: 500;
-    }
-
-    .social-links a i {
-      font-size: 1.3em;
-      margin-right: 0.4em;
-      vertical-align: middle;
-    }
-
-    .social-links a:hover,
-    .social-links a:focus {
-      color: var(--link-hover);
-      transform: translateY(-2px) scale(1.07);
-    }
-
-    .pub-info a {
-      display: inline-flex;
-      align-items: center;
-      color: var(--text-secondary);
-      font-weight: 500;
-      font-size: 1.04em;
-      margin-right: 0.7em;
-      margin-bottom: 0.2em;
-      text-decoration: none;
-      transition: color 0.18s;
-    }
-
-    .pub-info a:last-child {
-      margin-right: 0;
-    }
-
-    .pub-info a i {
-      font-size: 1.22em;
-      margin-right: 0.22em;
-      color: #b0bfd9;
-      vertical-align: middle;
-      transition: color 0.18s, transform 0.18s;
-    }
-
-    [data-theme="dark"] .pub-info a i {
-      color: #7ca3d3;
-    }
-
-    .pub-info a:hover,
-    .pub-info a:focus {
-      color: var(--link-color);
-    }
-
-    .pub-info a:hover i,
-    .pub-info a:focus i {
-      color: var(--link-color);
-      transform: scale(1.13) translateY(-1px);
-    }
-
-    .pub-meta {
-      font-size: 0.98em;
-      color: var(--text-tertiary);
-      margin-bottom: 0.2em;
-      margin-top: 0.1em;
-      line-height: 1.4;
+      margin-bottom: 0.5em;
+      margin-top: 0;
+      font-size: 18px;
       font-weight: 400;
+      line-height: 1.5;
     }
 
-    .pub-meta a {
-      margin: 0;
-      padding: 0;
+    /* Paper metadata */
+    .pub-meta {
+      margin-bottom: 0.5em;
+      margin-top: 0;
     }
 
-    .pub-meta em {
-      color: var(--text-light);
-      font-style: normal;
-      font-size: 0.97em;
-      margin-left: 0.5em;
+    /* Paper links */
+    .pub-info>a {
+      margin-right: 1em;
+      margin-bottom: 0.3em;
     }
 
-    /* Links inside publication descriptions - reset inherited button styles */
-    .pub-info p a {
-      display: inline;
-      color: var(--link-color);
-      font-weight: inherit;
-      font-size: inherit;
-      margin-right: 0;
-      margin-bottom: 0;
+    /* Space between icon and text */
+    .pub-info>a i {
+      margin-right: 0.3em;
     }
 
-    .pub-info p a:hover {
-      color: var(--link-hover);
+    /* Highlighted papers */
+    .pub-entry.highlight {
+      background: #fff9e6;
     }
 
-    @media (max-width: 800px) {
-      .profile-flex {
-        flex-direction: column;
-        gap: 16px;
-      }
-
-      .pub-entry {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .container {
-        padding: 0 4px;
-      }
-
-      .pub-img {
-        align-self: center;
-      }
-
-      .pub-img img {
-        width: 200px;
-        height: 200px;
-      }
-    }
-
-    /* Publication topic header styling */
+    /* Section headers - prominent styling */
     .pub-topic-header {
       font-size: 1.45em;
-      font-weight: 800;
-      color: var(--link-color);
-      border-left: 5px solid var(--link-color);
-      padding-left: 16px;
+      font-weight: 600;
+      color: #2a7ae2;
       margin-top: 40px;
       margin-bottom: 18px;
       letter-spacing: 0.01em;
-      background: linear-gradient(90deg, var(--link-color) 0 6px, transparent 6px 100%);
-      border-radius: 3px;
     }
 
-    [data-theme="dark"] .pub-topic-header {
-      color: var(--link-color);
-      border-left: 5px solid var(--link-color);
-      background: linear-gradient(90deg, var(--link-color) 0 6px, transparent 6px 100%);
+    /* Divider */
+    .divider {
+      border-top: 1px solid #e8e8e8;
+      margin: 20px 0;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 600px) {
+
+      /* Profile: Image on top, then bio */
+      .profile-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .profile-info {
+        text-align: center;
+      }
+
+      .profile-img {
+        flex: 0 0 auto;
+        max-width: 180px;
+        margin-bottom: 5px;
+      }
+
+      /* Publications: Stack vertically */
+      .pub-entry {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        margin-bottom: 25px;
+      }
+
+      .pub-img,
+      .pub-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .pub-img img {
+        /* Allow image to scale down */
+        max-width: 100%;
+        height: auto;
+      }
+
+      .pub-info {
+        text-align: center;
+        /* Center align text on mobile for cleaner look */
+      }
+
+      .pub-info>a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      /* Adjust header sizes */
+      h1,
+      .site-title {
+        font-size: 28px;
+        padding-top: 0.5em;
+      }
+
+      .pub-topic-header {
+        margin-top: 25px;
+        font-size: 1.3em;
+        text-align: center;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Theme Toggle Button -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-    <i class="fa-solid fa-moon" id="themeIcon"></i>
-    <span id="themeText">Dark</span>
-  </button>
 
   <div class="container">
-    <div class="profile-flex" style="margin-top: 24px;">
+    <!-- Name at top, centered -->
+    <h1>Shyamgopal Karthik</h1>
+
+    <!-- Bio left, profile picture right -->
+    <div class="profile-flex">
       <div class="profile-info">
-        <h1 style="text-align:center; font-weight:bold; font-size:2.5em;">Shyamgopal Karthik</h1>
-        <p>I am a researcher at <a href="https://www.genmo.ai/">Genmo</a> working on video generation. Previously, I did
+        <p>I am a researcher at <a href="https://www.genmo.ai/">Genmo</a> working on world models. Previously, I did
           my PhD at the <a href="https://tuebingen.ai/">University of Tübingen</a> broadly working on problems at the
           intersection of Vision and Language. I've especially enjoyed worked on post-training diffusion models with
           human feedback in the past couple of years and am excited to improve the controllability and alignment of
-          these models in the coming years. <br /> <br />
-          Before this, I completed my Bachelor's and Master's degree from the <a
+          these models in the coming years.</p>
+        <p>Before this, I completed my Bachelor's and Master's degree from the <a
             href="https://www.iiit.ac.in/">International Institute of Information Technology, Hyderabad</a>, where I
           worked with <a href="https://vineet-gandhi.github.io/">Prof. Vineet Gandhi</a> on a variety of computer vision
-          problems. <br /> <br />
-          I've also done internships at <a href="https://research.snap.com/team/creative-vision.html">Snap Research</a>
+          problems.</p>
+        <p>I've also done internships at <a href="https://research.snap.com/team/creative-vision.html">Snap Research</a>
           and <a href="https://europe.naverlabs.com/">Naver Labs Europe</a>, where I developed better preference
           optimization methods for text-to-image models and self-supervised learning methods for learning from noisy and
-          imbalanced data.<br /> <br />
-          In a previous life, I used to be a <a href="https://ratings.fide.com/profile/25066846">terrible</a> chess
-          player.
-        </p>
+          imbalanced data.</p>
+        <p>In a previous life, I used to be a <a href="https://ratings.fide.com/profile/25066846">terrible</a> chess
+          player.</p>
 
         <div class="social-links">
-          <a href="mailto:shyamgopalkart@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="mailto:shyamgopalkart@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
           <a href="https://scholar.google.com/citations?user=OiVCfscAAAAJ&hl=en"><i
-              class="fa-solid fa-graduation-cap"></i> Scholar</a>
-          <a href="https://x.com/ShyamgopalKart1"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
-          <a href="https://github.com/sgk98/"><i class="fa-brands fa-github"></i> Github</a>
-          <a href="https://www.linkedin.com/in/shyamgopal-karthik-6aaa88155/"><i class="fa-brands fa-linkedin"></i>
-            LinkedIn</a>
+              class="fa-solid fa-graduation-cap"></i>Scholar</a>
+          <a href="https://x.com/ShyamgopalKart1"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+          <a href="https://github.com/sgk98/"><i class="fa-brands fa-github"></i>Github</a>
+          <a href="https://www.linkedin.com/in/shyamgopal-karthik-6aaa88155/"><i
+              class="fa-brands fa-linkedin"></i>LinkedIn</a>
         </div>
       </div>
       <div class="profile-img">
-        <img width="100%" style="border-radius: 50%" src="./imgs/Shyam_profile.jpg">
+        <img src="./imgs/Shyam_profile.jpg">
       </div>
     </div>
 
@@ -455,8 +347,8 @@
             <a href="https://arxiv.org/abs/2601.00090"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://akoepke.github.io/noise_optimization_diversity/"><i class="fa-solid fa-globe"></i>Project
               Page</a>
-            <p>Continuing my favourite topic of test-time scaling through noise optimization for diffusion models, we
-              tried to implement noise optimization to increase the diversity of generated samples.
+            <p>Going along with my favourite topic of test-time scaling through noise optimization for diffusion models,
+              we tried to implement noise optimization to increase the diversity of generated samples.
               Unsurprisingly (as I've come to see), the method worked really well. However, we found interesting
               insights through this process. First, that optimizing the eigenvalues of the similarity matrix is a much
               better way to quanitfy diversity.
@@ -477,12 +369,12 @@
                 href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>,<a
                 href="https://natanielruiz.github.io/">Nataniel Ruiz*</a>, <a
                 href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata*</a><br>
-              <em>NeurIPS 2025, San Diego, USA</em>.
+              <em>NeurIPS 2025</em>.
             </div>
             <a href="https://arxiv.org/abs/2508.09968"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/HyperNoise"><i class="fa-brands fa-github"></i>code</a>
             <a href="https://noisehypernetworks.github.io/"><i class="fa-solid fa-globe"></i>Project Page</a>
-            <p>Test-time scaling had become ubiquitous in text-to-image models (among other things due to our work :P).
+            <p>Test-time scaling had become ubiquitous in text-to-image models (among other things due to our work).
               However, we found a neat way to explicitly post-train for the test-time noise optimization objective by
               training a "hypernetwork" that is optimized to predict the optimal initial noise. This gave neat
               improvements even on large models like FLUX, but also gives a neat formulation for reward optimization
@@ -503,11 +395,10 @@
                 href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a>, <a
                 href="https://stulyakov.com/">Sergey Tulyakov</a>, <a href="https://alanspike.github.io/">Jian Ren</a>,
               and <a href="https://scholar.google.com/citations?user=bZdVsMkAAAAJ">Anil Kag</a><br>
-              <em>ICCV 2025</em>, Hawaii, USA.
+              <em>ICCV 2025</em>.
             </div>
             <a href="https://arxiv.org/abs/2410.18013"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://snap-research.github.io/RankDPO/"><i class="fa-solid fa-globe"></i>Project Page</a>
-            <a href="newbibs/rankdpo.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>While ReNO did an amazing job at improving the quality of text-to-image models, this came with an
               increased runtime. As a result, we were looking at DPO based techniques to improve the quality of
               text-to-image models. Turns out, the biggest bottleneck with applying DPO on these models is that public
@@ -535,7 +426,6 @@
             <a href="https://arxiv.org/abs/2406.04312"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/ReNO"><i class="fa-brands fa-github"></i>code</a>
             <a href="https://huggingface.co/spaces/fffiloni/ReNO"><i class="fa-solid fa-play-circle"></i>demo</a>
-            <a href="newbibs/reno.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>We knew that best-of-n sampling with a reward model was already an extremely strong baseline. However,
               could we go one-step further and <strong>optimize the initial noise</strong> to improve this further? This
               problem stumped us for a long while since backprop through the whole diffusion process was expensive and
@@ -563,7 +453,6 @@
             </div>
             <a href="https://arxiv.org/abs/2305.13308"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/ImageSelect"><i class="fa-brands fa-github"></i>code</a>
-            <a href="newbibs/imageselect.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>This paper started my journey into text-to-image generation. The main challenge we had was that Stable
               Diffusion models were doing a decent job at generating high-quality images, but there were tons of issues
               in closely following the prompt. While there were several methods proposed especially focusing on the
@@ -589,7 +478,7 @@
               Karthik</strong>, <a href="https://qbouniot.github.io/">Qunetin Bouniot</a>, <a
               href="https://sergebelongie.github.io/"> Serge Belongie</a>, <a
               href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-            <em>NeurIPS 2025</em>, San Diego, USA.
+            <em>NeurIPS 2025</em>.
           </div>
           <a href="https://arxiv.org/abs/2504.02821"><i class="fa-solid fa-file-lines"></i>paper</a>
           <a href="https://github.com/ExplainableML/sae-for-vlm"><i class="fa-brands fa-github"></i>code</a>
@@ -616,7 +505,7 @@
                 href="https://scholar.google.de/citations?user=p1FuAMkAAAAJ&hl=en">Jenia Jitsev</a>, <a
                 href="https://samuelalbanie.com/">Samuel Albanie</a>, <a
                 href="https://scholar.google.com/citations?user=0z0fNxUAAAAJ&hl=en">Matthias Bethge</a><br>
-              <em>EVAL-FOMO Workshop at CVPR 2025</em>, Nashville, USA.
+              <em>EVAL-FOMO Workshop at CVPR 2025</em>.
             </div>
             <a href="https://arxiv.org/abs/2506.08227"><i class="fa-solid fa-file-lines"></i>paper</a>
             <p>Along with <a href="https://vishaal27.github.io/">Vishaal</a> and <a
@@ -643,7 +532,6 @@
             </div>
             <a href="https://arxiv.org/abs/2407.16658"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/EgoCVR"><i class="fa-brands fa-github"></i>code</a>
-            <a href="newbibs/egocvr.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>Building on our previous work, we were keen on exploring Composed Video Retrieval. The biggest issue was
               that the existing benchmark (WebVid-CoVR) was focused excessively on images and did not really require the
               whole video to solve the task. To address this issue, we spent a lot of time manually curating a nice
@@ -668,7 +556,6 @@
             </div>
             <a href="https://arxiv.org/abs/2310.09291"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/Vision_by_Language"><i class="fa-brands fa-github"></i>code</a>
-            <a href="newbibs/cirevl.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>We started off looking at Composed Image Retrieval task where we have a query image and textual
               instruction that modified the query. Popular methods for this task were trained similar to textual
               inversion methods and predicted a "pseudo-token" for the query image. Our immediate instinct was that
@@ -693,13 +580,12 @@
             <div class="pub-meta">
               <strong>Shyamgopal Karthik</strong>, <a href="https://mancinimassimiliano.github.io/">Massimiliano
                 Mancini</a>, <a href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
-              <em>CVPR 2022</em>, New Orleans, USA.
+              <em>CVPR 2022</em>.
             </div>
             <a
               href="https://openaccess.thecvf.com/content/CVPR2022/papers/Karthik_KG-SP_Knowledge_Guided_Simple_Primitives_for_Open_World_Compositional_Zero-Shot_CVPR_2022_paper.pdf"><i
                 class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/ExplainableML/KG-SP"><i class="fa-brands fa-github"></i>code</a>
-            <a href="newbibs/kgsp.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>In this work, we looked at the problem of Compositional Zero-Shot Learning, where the goal is to predict
               (attribute, object) labels for an image, and generalize to unseen (attribute, object) pairs. Recent
               methods had tried to model attributes and objects jointly using a variety of ideas. Here, we show that
@@ -722,11 +608,10 @@
                 href="https://europe.naverlabs.com/people_user/Jerome-Revaud/">Jerome Revaud</a>, <a
                 href="https://europe.naverlabs.com/people_user/Boris-Chidlovskii/">Boris Chidlovskii</a><br>
               <em>ICCV 2021 Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous
-                Driving</em>, Virtual.
+                Driving</em>.
             </div>
             <a href="https://arxiv.org/abs/2108.11096"><i class="fa-solid fa-file-lines"></i>paper</a>
-            <a href="newbibs/ssl_noise.bib"><i class="fa-solid fa-book"></i>bibtex</a>
-            <p>This paper started off as a fun journey towards developing methods that are robust to both label noise
+            <p>This paper started off as a journey towards developing methods that are robust to both label noise
               and long-tailed class distributions. Methods tailored for one of these challenges collapsed when the other
               challenge was introduced. In the end, it turned out that vanilla self-supervised training went a long way
               in learning representations that were robust to both label noise and long-tailed distributions.
@@ -744,11 +629,10 @@
               <strong>Shyamgopal Karthik</strong>, <a href="https://drimpossible.github.io/">Ameya Prabhu</a>, <a
                 href="https://puneetkdokania.github.io/">Puneet Dokania</a>, <a
                 href="https://faculty.iiit.ac.in/~vgandhi/">Vineet Gandhi</a><br>
-              <em> ICLR 2021</em>, Virtual.
+              <em> ICLR 2021</em>.
             </div>
             <a href="https://arxiv.org/abs/2104.00795"><i class="fa-solid fa-file-lines"></i>paper</a>
             <a href="https://github.com/sgk98/CRM-Better-Mistakes"><i class="fa-brands fa-github"></i>code</a>
-            <a href="newbibs/iclr.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>The main motivation behind this work was to see if we could reduce the severity of mistakes in a
               classification setting. To do this, we make use of label hierarchies which are readily available through
               taxonomies like WordNet. For our method, we show that a simple algorithm from Duda and Hart's Pattern
@@ -770,7 +654,6 @@
               <em> Arxiv 2020</em>.
             </div>
             <a href="https://arxiv.org/abs/2006.02609"><i class="fa-solid fa-file-lines"></i>paper</a>
-            <a href="newbibs/mot.bib"><i class="fa-solid fa-book"></i>bibtex</a>
             <p>We revisited Re-Idenification models that were widely used in Multi-Object Tracking algorithms. In
               various trackers, this is often the only component that requires video level supervision. Our insight was
               that we could train a ReID model using pseudo-labels generated from a Kalman filter based tracker in a
@@ -785,61 +668,11 @@
   </div>
   </section>
   </div>
-  <div style="margin-top: 40px;">
-    <p align="right">
-      <font size="2">
-        Website style cloned from <a href="https://jonbarron.info/"><strong>this</strong></a> wonderful website.<br>
-        Last update: July 2025
-      </font>
-    </p>
-  </div>
+
   </div>
   </div>
 
-  <script>
-    // Theme toggle functionality
-    const themeToggle = document.getElementById('themeToggle');
-    const themeIcon = document.getElementById('themeIcon');
-    const themeText = document.getElementById('themeText');
-    const html = document.documentElement;
 
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
-
-    // Apply the current theme
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        html.setAttribute('data-theme', 'dark');
-        themeIcon.className = 'fa-solid fa-sun';
-        themeText.textContent = 'Light';
-        themeToggle.setAttribute('aria-label', 'Toggle light mode');
-      } else {
-        html.removeAttribute('data-theme');
-        themeIcon.className = 'fa-solid fa-moon';
-        themeText.textContent = 'Dark';
-        themeToggle.setAttribute('aria-label', 'Toggle dark mode');
-      }
-    }
-
-    // Initialize theme
-    applyTheme(currentTheme);
-
-    // Theme toggle click handler
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-      applyTheme(newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-      if (!localStorage.getItem('theme')) {
-        applyTheme(e.matches ? 'dark' : 'light');
-      }
-    });
-  </script>
 </body>
 
 </html>
