@@ -13,6 +13,33 @@
   <link href='https://fonts.googleapis.com/css?family=Dosis|Raleway' rel='stylesheet' type='text/css'>
 
   <style type="text/css">
+    :root {
+      --bg-base: #f5f2e9;
+      --bg-depth: #efeadf;
+      --card-surface: #fbf8f1;
+      --highlight-surface: #e8e0cd;
+      --highlight-border: #d7c9a9;
+      --highlight-accent: #b59b66;
+      --topic-ink: #635843;
+      --topic-rule: rgba(99, 88, 67, 0.35);
+    }
+
+    html,
+    body {
+      background-color: var(--bg-base) !important;
+    }
+
+    body {
+      min-height: 100vh;
+      background-image:
+        radial-gradient(1200px 700px at 50% -220px, rgba(255, 255, 255, 0.52), transparent 60%),
+        linear-gradient(180deg, var(--bg-base) 0%, var(--bg-depth) 100%);
+    }
+
+    .container {
+      background: transparent !important;
+    }
+
     /* Site title - matching agarwl's styling */
     h1,
     .site-title {
@@ -119,6 +146,8 @@
       padding: 20px;
       border-radius: 8px;
       flex-wrap: wrap;
+      background: var(--card-surface);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
@@ -128,7 +157,7 @@
     }
 
     .pub-entry.highlight:hover {
-      box-shadow: 0 8px 25px rgba(255, 193, 7, 0.25);
+      box-shadow: inset 4px 0 0 var(--highlight-accent), 0 8px 25px rgba(181, 155, 102, 0.32);
     }
 
     .pub-img {
@@ -184,17 +213,31 @@
 
     /* Highlighted papers */
     .pub-entry.highlight {
-      background: #fff9e6;
+      background: var(--highlight-surface);
+      border: 1px solid var(--highlight-border);
+      box-shadow: inset 4px 0 0 var(--highlight-accent), 0 1px 2px rgba(0, 0, 0, 0.04);
     }
 
     /* Section headers - prominent styling */
     .pub-topic-header {
-      font-size: 1.45em;
+      font-family: 'Dosis', 'Raleway', sans-serif;
+      font-size: 1.05rem;
       font-weight: 600;
-      color: #2a7ae2;
+      text-transform: uppercase;
+      color: var(--topic-ink);
       margin-top: 40px;
       margin-bottom: 18px;
-      letter-spacing: 0.01em;
+      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .pub-topic-header::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, var(--topic-rule), transparent);
     }
 
     /* Divider */
@@ -263,8 +306,13 @@
 
       .pub-topic-header {
         margin-top: 25px;
-        font-size: 1.3em;
+        font-size: 1rem;
         text-align: center;
+        display: block;
+      }
+
+      .pub-topic-header::after {
+        display: none;
       }
     }
   </style>
@@ -366,7 +414,7 @@
             <h3>Noise Hypernetworks: Amortizing Test-Time Compute in Diffusion Models</h3>
             <div class="pub-meta">
               <a href="https://lucaeyring.com/">Luca Eyring </a>, <strong>Shyamgopal Karthik</strong>, <a
-                href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>,<a
+                href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>, <a
                 href="https://natanielruiz.github.io/">Nataniel Ruiz*</a>, <a
                 href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata*</a><br>
               <em>NeurIPS 2025</em>.
