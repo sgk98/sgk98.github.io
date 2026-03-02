@@ -349,7 +349,7 @@
           <a href="https://scholar.google.com/citations?user=OiVCfscAAAAJ&hl=en"><i
               class="fa-solid fa-graduation-cap"></i>Scholar</a>
           <a href="https://x.com/ShyamgopalKart1"><i class="fa-brands fa-x-twitter"></i>Twitter</a>
-          <a href="https://github.com/sgk98/"><i class="fa-brands fa-github"></i>Github</a>
+          <a href="https://github.com/sgk98/"><i class="fa-brands fa-github"></i>GitHub</a>
           <a href="https://www.linkedin.com/in/shyamgopal-karthik-6aaa88155/"><i
               class="fa-brands fa-linkedin"></i>LinkedIn</a>
         </div>
@@ -400,7 +400,7 @@
               we tried to implement noise optimization to increase the diversity of generated samples.
               Unsurprisingly (as I've come to see), the method worked really well. However, we found interesting
               insights through this process. First, that optimizing the eigenvalues of the similarity matrix is a much
-              better way to quanitfy diversity.
+	              better way to quantify diversity.
               We were also able to look at the frequency of the initial noises to find improved noise initialization
               schemes in the process.
             </p>
@@ -479,9 +479,9 @@
               could we go one-step further and <strong>optimize the initial noise</strong> to improve this further? This
               problem stumped us for a long while since backprop through the whole diffusion process was expensive and
               had exploding gradients. We finally found the solution with <strong>one-step models</strong>! However,
-              would the one-step models be good enough to work with? Turns out that optimziing the noise of one-step
+	              would the one-step models be good enough to work with? Turns out that optimizing the noise of one-step
               text-to-image models could give us results that were competitive with proprietary closed source models
-              that were 10x larger! This also culminated a frutiful 1.5 year journey for me of trying my best to find
+	              that were 10x larger! This also culminated a fruitful 1.5 year journey for me of trying my best to find
               interesting research directions without updating a <strong>single</strong> parameter of any model.
             </p>
           </div>
@@ -505,7 +505,7 @@
             <p>This paper started my journey into text-to-image generation. The main challenge we had was that Stable
               Diffusion models were doing a decent job at generating high-quality images, but there were tons of issues
               in closely following the prompt. While there were several methods proposed especially focusing on the
-              attention maps during inference, we realized than best-of-n sampling with a human-preference reward model
+	              attention maps during inference, we realized that best-of-n sampling with a human-preference reward model
               went a long way in improving the results. While this was quite trivial in some ways, it set the stage for
               us to continue exploring the effectiveness of reward models and the effect of the seed in image
               generation.
@@ -524,7 +524,7 @@
           <h3>Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models</h3>
           <div class="pub-meta">
             <a href="https://scholar.google.com/citations?hl=en&user=s5FT5bIAAAAJ">Mateusz Pach</a>, <strong>Shyamgopal
-              Karthik</strong>, <a href="https://qbouniot.github.io/">Qunetin Bouniot</a>, <a
+	              Karthik</strong>, <a href="https://qbouniot.github.io/">Quentin Bouniot</a>, <a
               href="https://sergebelongie.github.io/"> Serge Belongie</a>, <a
               href="https://www.eml-unitue.de/people/zeynep-akata">Zeynep Akata</a><br>
             <em>NeurIPS 2025</em>.
@@ -533,7 +533,7 @@
           <a href="https://github.com/ExplainableML/sae-for-vlm"><i class="fa-brands fa-github"></i>code</a>
           <p>This was an illuminating exploration into mechanistic interpretability and sparse Autoencoders for me.
             Being able to steer multimodal LLMs with just an SAE on the vision encoder without touching the language
-            decoder in an unsupervised manner was especially impressive result.
+	            decoder in an unsupervised manner was an especially impressive result.
             However, as people are finding out, SAEs (much like other interpretability methods) don't seem to be the
             panacea for the difficult problems of safety and controllability.
           </p>
@@ -585,7 +585,7 @@
               that the existing benchmark (WebVid-CoVR) was focused excessively on images and did not really require the
               whole video to solve the task. To address this issue, we spent a lot of time manually curating a nice
               evaluation set from Ego4D which eventually turned out into a very nice benchmark. CIReVL adapted for
-              videos also turned out to be a very nice training-free method that was competitive with mehtods training
+	              videos also turned out to be a very nice training-free method that was competitive with methods training
               on millions of videos!
             </p>
           </div>
@@ -703,7 +703,7 @@
               <em> Arxiv 2020</em>.
             </div>
             <a href="https://arxiv.org/abs/2006.02609"><i class="fa-solid fa-file-lines"></i>paper</a>
-            <p>We revisited Re-Idenification models that were widely used in Multi-Object Tracking algorithms. In
+	            <p>We revisited Re-Identification models that were widely used in Multi-Object Tracking algorithms. In
               various trackers, this is often the only component that requires video level supervision. Our insight was
               that we could train a ReID model using pseudo-labels generated from a Kalman filter based tracker in a
               self-supervised fashion. The resulting ReID model can be used as a drop-in replacement to the supervised
