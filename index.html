@@ -397,12 +397,11 @@
             <a href="https://akoepke.github.io/noise_optimization_diversity/"><i class="fa-solid fa-globe"></i>Project
               Page</a>
             <p>Going along with my favourite topic of test-time scaling through noise optimization for diffusion models,
-              we tried to implement noise optimization to increase the diversity of generated samples.
-              Unsurprisingly (as I've come to see), the method worked really well. However, we found interesting
-              insights through this process. First, that optimizing the eigenvalues of the similarity matrix is a much
-	              better way to quantify diversity.
-              We were also able to look at the frequency of the initial noises to find improved noise initialization
-              schemes in the process.
+              we tried to implement noise optimization to increase the diversity of generated samples. Unsurprisingly (as
+              I've come to see), the method worked really well. However, we found interesting insights through this
+              process. First, that the eigenvalues of the pairwise similarity matrix, rather than the raw similarities, are the more natural and effective quantity to optimize for diversity. Second, that analyzing the frequency
+              characteristics of the initial noise shows that alternative initializations with different frequency
+              profiles can improve both optimization and search.
             </p>
           </div>
         </div>
